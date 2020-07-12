@@ -1,11 +1,20 @@
+#include <unistd.h>
 #include <stdio.h>
 
-int main(void)
+void ft_putchar(char c)
 {
-	char leter = 'z';
-	while (letter > 'a')
+	write(1, &c, 1);
+}
+void ft_print_reverse_alphabet(void)
+{
+	char letter = 'z';
+	while (letter = < 'a')
 	{
 		ft_putchar(letter);
 		letter--;
 	}
+}
+int main()
+{
+ft_print_reverse_alphabet();
 }
